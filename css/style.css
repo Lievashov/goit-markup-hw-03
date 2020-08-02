@@ -10,6 +10,14 @@ body {
 	background-color: #e9dede;
 }
 
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .logo {
 	font-family: Raleway;
 	font-weight: bold;
