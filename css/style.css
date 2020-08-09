@@ -7,7 +7,6 @@ body {
 	line-height: 24px;
 	letter-spacing: 0.03em;
 	color: #757575;
-	background-color: #e9dede;
 }
 
 .conteiner {
@@ -20,16 +19,17 @@ body {
 
 .logo {
 	font-family: Raleway;
-	font-weight: bold;
+	font-style: normal;
+	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.29em;
 	letter-spacing: 0.03em;
-	color: #2196f3;
-	padding: 24px 85px 25px 0;
+	color: #000000;
+	margin-right: 94px;
 }
 
-.logo span {
-	color: #000000;
+.words {
+	color: #2196f3;
 }
 
 .list {
@@ -41,6 +41,10 @@ body {
 
 .section {
 	margin: 0 0 94px;
+}
+
+.about-us-item {
+	padding: 0 0 94px;
 }
 
 .navigation {
@@ -93,24 +97,31 @@ body {
 	text-decoration: none;
 }
 
-.page-title {
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 2.5em;
-	text-align: center;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	color: #ffffff;
-}
-
 .flexbox {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
 .hero {
-	background-color: #e9dede;
-	margin: 200px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	text-align: center;
+	background-color: #2f303a;
+}
+
+.page-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.37em;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
 }
 
 .section-title {
@@ -148,6 +159,7 @@ body {
 	border-radius: 4px;
 	padding: 10px 32px;
 	margin: auto;
+	min-width: 200px;
 }
 
 .advantages {
@@ -155,11 +167,20 @@ body {
 }
 
 .advantages-item {
-	width: calc((100% - 90px) / 4);
+	width: calc((100% - 30px * 3) / 4);
+	margin-right: 30px;
+}
+
+.advantages-item:nth-child(4n) {
+	margin-right: 0px;
 }
 
 .advantages-icon {
 	padding: auto;
+}
+
+img {
+	border-style: none;
 }
 
 .title {
@@ -172,22 +193,30 @@ body {
 }
 
 .tatle-item {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 27px;
+	padding-bottom: 27px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 0.67em;
+	text-align: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #ffffff;
+	background: rgba(47, 48, 58, 0.8);
+	width: 370px;
 }
-
 .page-title {
-	margin: 0px;
+	width: 696px;
 }
 
 .main-text {
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.03em;
+	width: 270px;
+	height: 75px;
 }
 
 .about-us-list {
@@ -196,16 +225,45 @@ body {
 }
 
 .about-us-item {
+	width: 370px;
+	height: 294px;
 	width: calc((100% - 30px * 2) / 3);
 	margin-right: 30px;
+}
+
+.about-us-img {
+	display: block;
 }
 
 .about-us-item:nth-child(3n) {
 	margin-right: 0;
 }
 
+.team-section {
+	background-color: #f5f4fa;
+	padding-top: 94px;
+}
+
+.team-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 94px;
+}
+
 .team {
 	text-align: center;
+	padding-bottom: 24px;
+	width: calc((100% - 30px * 3) / 4);
+	margin-right: 30px;
+	width: 270px;
+	height: 368px;
+	background: #ffffff;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team:nth-child(4n) {
+	margin-right: 0px;
 }
 
 .team-position {
@@ -216,14 +274,65 @@ body {
 	color: #757575;
 }
 
-footer {
+li.icon-list {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.icon-list:not(:last-child) {
+	display: block;
+	text-align: center;
+	width: 44px;
+	margin-right: 10px;
+}
+
+.icon {
+	display: block;
+	padding: 12px;
+}
+
+.footer {
 	background-color: #2f303a;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer-flexbox {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer-logo {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.29em;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	margin-right: 0px;
+}
+
+.footer-address {
+	margin-right: 70px;
+	width: 231px;
+}
+
+.footer-link {
+	display: block;
+}
+
+.contacts-link {
+	width: 231px;
+	height: 21px;
 }
 
 .contacts {
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
+	width: 231px;
+	height: 21px;
 }
 
 .btn-portfolio {
@@ -277,4 +386,23 @@ footer {
 	letter-spacing: 0.03em;
 	color: #ffffff;
 	text-decoration: none;
+}
+
+.partner {
+	width: calc((100% - 30px * 5) / 6);
+	margin-right: 30px;
+}
+
+.partner:nth-child(6n) {
+	margin-right: 0;
+}
+
+.partner-item {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 170px;
+	height: 90px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
 }
