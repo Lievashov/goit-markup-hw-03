@@ -25,6 +25,7 @@ body {
 	line-height: 1.29em;
 	letter-spacing: 0.03em;
 	color: #2196f3;
+	padding: 24px 85px 25px 0;
 }
 
 .logo span {
@@ -35,10 +36,34 @@ body {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	display: flex;
+}
+
+.section {
+	margin: 0 0 94px;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+
+.adres-list {
+	display: flex;
+	align-items: center;
+}
+
+.adres:not(:last-child) {
+	margin-right: 50px;
 }
 
 .menu-list {
 	display: flex;
+}
+
+.menu-item:not(:last-child) {
+	margin-right: 50px;
 }
 
 .menu-link {
@@ -78,8 +103,14 @@ body {
 	color: #ffffff;
 }
 
+.flexbox {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .hero {
 	background-color: #e9dede;
+	margin: 200px;
 }
 
 .section-title {
@@ -89,6 +120,18 @@ body {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: #212121;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	/* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
 
 .btn {
@@ -103,6 +146,20 @@ body {
 	background: #2196f3;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+	padding: 10px 32px;
+	margin: auto;
+}
+
+.advantages {
+	justify-content: space-between;
+}
+
+.advantages-item {
+	width: calc((100% - 90px) / 4);
+}
+
+.advantages-icon {
+	padding: auto;
 }
 
 .title {
@@ -123,10 +180,28 @@ body {
 	color: #ffffff;
 }
 
+.page-title {
+	margin: 0px;
+}
+
 .main-text {
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.03em;
+}
+
+.about-us-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-us-item {
+	width: calc((100% - 30px * 2) / 3);
+	margin-right: 30px;
+}
+
+.about-us-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .team {
