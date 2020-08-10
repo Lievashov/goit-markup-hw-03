@@ -322,6 +322,11 @@ li.icon-list {
 	display: block;
 }
 
+p.tatle-item {
+	text-align: start;
+	width: 370px;
+}
+
 .contacts-link {
 	width: 231px;
 	height: 21px;
@@ -344,6 +349,15 @@ li.icon-list {
 	color: #212121;
 	background: #f5f4fa;
 	border-radius: 4px;
+	padding: 6px 22px;
+	width: calc((100% - 8px * 4) / 5);
+	margin-right: 8px;
+	height: 38px;
+	width: min-content;
+}
+
+.btn-portfolio:nth-child(5n) {
+	margin-right: 0px;
 }
 
 .btn-portfolio:hover,
@@ -359,6 +373,12 @@ li.icon-list {
 	border-radius: 4px;
 }
 
+.portfolio-nav {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
 .title-portfolio {
 	font-weight: 700;
 	font-size: 18px;
@@ -366,6 +386,21 @@ li.icon-list {
 	letter-spacing: 0.06em;
 	color: #212121;
 	text-decoration: none;
+}
+
+.portfolio-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio {
+	width: calc((100% - 30px * 2) / 3);
+	margin-right: 30px;
+	width: 370;
+}
+
+.portfolio:nth-child(3n) {
+	margin-right: 0px;
 }
 
 .porfolio-item {
