@@ -350,10 +350,8 @@ p.tatle-item {
 	background: #f5f4fa;
 	border-radius: 4px;
 	padding: 6px 22px;
-	width: calc((100% - 8px * 4) / 5);
 	margin-right: 8px;
 	height: 38px;
-	width: min-content;
 }
 
 .btn-portfolio:nth-child(5n) {
@@ -377,6 +375,11 @@ p.tatle-item {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
+}
+
+.section-portfolio {
+	margin-top: 94px;
+	margin-bottom: 94px;
 }
 
 .title-portfolio {
@@ -421,6 +424,7 @@ p.tatle-item {
 	letter-spacing: 0.03em;
 	color: #ffffff;
 	text-decoration: none;
+	background: rgba(33, 150, 243, 0.9);
 }
 
 .partner {
